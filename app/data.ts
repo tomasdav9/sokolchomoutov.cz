@@ -30,24 +30,44 @@ export const menStaff = [
 
 export const sponsors = [
   {
-    src: "https://989465e506.cbaul-cdnwnd.com/c75b673237e14cef3d0c32cf6a6fa108/200000188-f063df156f/logo.jpg?ph=989465e506",
+    src: "/sponsors/sponsor-1.jpg",
     alt: "Partner klubu",
   },
   {
-    src: "https://989465e506.cbaul-cdnwnd.com/c75b673237e14cef3d0c32cf6a6fa108/200000190-83f2184f10/staves-facebook.png?ph=989465e506",
+    src: "/sponsors/sponsor-2.png",
     alt: "STAVES",
   },
   {
-    src: "https://989465e506.cbaul-cdnwnd.com/c75b673237e14cef3d0c32cf6a6fa108/200000189-60cf861f75/OLTIS-Gro-1-300x300.jpg?ph=989465e506",
+    src: "/sponsors/sponsor-3.jpg",
     alt: "OLTIS Group",
   },
   {
-    src: "https://989465e506.cbaul-cdnwnd.com/c75b673237e14cef3d0c32cf6a6fa108/200000191-e983bea810/logo_interkov-2-300x186.png?ph=989465e506",
+    src: "/sponsors/sponsor-4.png",
     alt: "INTERKOV",
   },
   {
-    src: "https://989465e506.cbaul-cdnwnd.com/c75b673237e14cef3d0c32cf6a6fa108/200000192-32ef733e25/autovrakovi%C5%A1t%C4%9B.jpg?ph=989465e506",
+    src: "/sponsors/sponsor-5.jpg",
     alt: "Autovrakoviště",
+  },
+  {
+    src: "/sponsors/sponsor-6.jpg",
+    alt: "FAČR",
+  },
+  {
+    src: "/sponsors/sponsor-7.jpg",
+    alt: "Sponzor",
+  },
+  {
+    src: "/sponsors/sponsor-8.jpg",
+    alt: "Logo Olomouc",
+  },
+  {
+    src: "/sponsors/sponsor-9.jpg",
+    alt: "Olomoucký kraj",
+  },
+  {
+    src: "/sponsors/sponsor-10.png",
+    alt: "Laserový popis",
   },
 ];
 

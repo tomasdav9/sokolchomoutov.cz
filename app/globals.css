@@ -105,7 +105,7 @@ nav.links a:hover { color: #fff; background: rgba(255,255,255,.06); }
   transition: transform .16s, box-shadow .16s; filter: grayscale(.2); box-shadow: 0 1px 0 var(--line);
 }
 .sponsor:hover { transform: translateY(-5px); box-shadow: 0 16px 34px rgba(10,33,56,.16); filter: none; }
-.sponsor img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
+.sponsor img { max-width: 140px; max-height: 80px; object-fit: contain; }
 .sponsor-note { margin: 42px 0 0; color: var(--ink-soft); font-size: 17px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
 .sponsor-note a { color: #fff; }
 

@@ -21,7 +21,7 @@ export function HeroSection() {
             <span className="o">Chomoutov</span>
           </h1>
           <p className="lead">
-            Domácí fotbal se srdcem na hřišti. Muži, dorost i mládež pod jedním znakem -
+            Domácí fotbal se srdcem na hřišti. Muži i mládež pod jedním znakem -
             přijďte fandit na Horeckou.
           </p>
           <div className="hero-actions">

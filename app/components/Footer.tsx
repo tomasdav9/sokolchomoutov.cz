@@ -6,8 +6,8 @@ export function Footer() {
           <div className="foot-brand">
             <img src="/assets/logo.jpg" alt="Znak TJ Sokol Chomoutov" />
             <div>
-              <strong>TJ Sokol Chomoutov</strong>
-              <span>TJ Sokol Olomouc - Chomoutov, z.s.</span>
+              <strong>Sokol Chomoutov</strong>
+              <span>Tělovýchovná jednota Sokol Olomouc - Chomoutov, z.s.</span>
             </div>
           </div>
           <div className="foot-social">
@@ -34,7 +34,7 @@ export function Footer() {
           </div>
         </div>
         <div className="foot-bottom">
-          <span>© 2026 TJ Sokol Olomouc - Chomoutov, z.s.</span>
+          <span>© 2026 Tělovýchovná jednota Sokol Olomouc - Chomoutov, z.s.</span>
           <span>Horecká, Olomouc - Chomoutov, 783 35</span>
         </div>
       </div>
