@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>TJ Sokol Olomouc – Chomoutov</title>
+<meta name="description" content="Oficiální stránky fotbalového klubu TJ Sokol Olomouc – Chomoutov, z.s. Vedení, partneři, hřiště a kontakty." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --blue: #1668ad;
+    --blue-bright: #2b8bd8;
+    --blue-600: #105089;
+    --navy: #0a2138;
+    --navy-deep: #06182a;
+    --navy-card: #0f2c49;
+    --ink: #15202b;
+    --ink-soft: #51647a;
+    --line: #dce6f0;
+    --ice: #eef3f9;
+    --white: #ffffff;
+    --maxw: 1200px;
+    --display: 'Anton', 'Arial Narrow', sans-serif;
+    --head: 'Oswald', 'Arial Narrow', sans-serif;
+    --body: 'Source Sans 3', system-ui, sans-serif;
+    --stripe: repeating-linear-gradient(125deg, transparent 0 16px, rgba(255,255,255,.045) 16px 18px);
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 78px; }
+  body { margin: 0; font-family: var(--body); color: var(--ink); background: var(--white); font-size: 18px; line-height: 1.62; -webkit-font-smoothing: antialiased; }
+  img { display: block; max-width: 100%; }
+  a { color: inherit; text-decoration: none; }
+  .wrap { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 28px; }
+
+  .display { font-family: var(--display); font-weight: 400; letter-spacing: .005em; line-height: .92; text-transform: uppercase; }
+  .kicker {
+    font-family: var(--head); font-weight: 600; font-size: 14px; letter-spacing: .28em; text-transform: uppercase;
+    color: var(--blue); display: inline-flex; align-items: center; gap: 12px; margin: 0 0 18px;
+  }
+  .kicker::before { content: ""; width: 28px; height: 3px; background: var(--blue); }
+  .kicker.light { color: var(--blue-bright); }
+  .kicker.light::before { background: var(--blue-bright); }
+
+  section { padding: 100px 0; position: relative; }
+  .sec-head { max-width: 760px; margin: 0 0 56px; }
+  .sec-head h2 { font-family: var(--head); font-weight: 700; font-size: clamp(30px, 4.2vw, 46px); line-height: 1.06; letter-spacing: .01em; margin: 0 0 16px; text-transform: uppercase; color: var(--navy); }
+  .sec-head h2 .o { color: var(--blue); }
+  .sec-head p { margin: 0; font-size: 19px; color: var(--ink-soft); max-width: 60ch; }
+
+  .btn {
+    font-family: var(--head); font-weight: 600; font-size: 15.5px; letter-spacing: .08em; text-transform: uppercase;
+    padding: 15px 30px; transition: transform .14s, background .14s, color .14s; cursor: pointer; border: 0;
+    display: inline-flex; align-items: center; gap: 10px; border-radius: 3px;
+  }
+  .btn-primary { background: var(--blue); color: #fff; }
+  .btn-primary:hover { background: var(--blue-600); transform: translateY(-2px); }
+  .btn-light { background: #fff; color: var(--navy); }
+  .btn-light:hover { transform: translateY(-2px); }
+  .btn-outline { background: transparent; color: #fff; box-shadow: inset 0 0 0 2px rgba(255,255,255,.5); }
+  .btn-outline:hover { box-shadow: inset 0 0 0 2px #fff; transform: translateY(-2px); }
+
+  /* ---------- HEADER ---------- */
+  header.site { position: sticky; top: 0; z-index: 60; background: var(--navy-deep); border-bottom: 3px solid var(--blue); }
+  .nav { display: flex; align-items: center; gap: 16px; height: 74px; }
+  .brand { display: flex; align-items: center; gap: 12px; margin-right: auto; }
+  .brand img { width: 44px; height: 44px; border-radius: 50%; }
+  .brand .bt strong, .brand .bt span { white-space: nowrap; }
+  .brand .bt strong { font-family: var(--head); font-weight: 700; font-size: 18px; letter-spacing: .04em; color: #fff; display: block; text-transform: uppercase; line-height: 1; }
+  .brand .bt span { font-size: 12px; color: #8fb2d4; letter-spacing: .08em; text-transform: uppercase; }
+  nav.links { display: flex; gap: 2px; }
+  nav.links a {
+    font-family: var(--head); font-weight: 500; font-size: 15px; letter-spacing: .06em; text-transform: uppercase; white-space: nowrap;
+    padding: 9px 13px; color: #cfe0f0; transition: color .14s, background .14s; position: relative;
+  }
+  nav.links a:hover { color: #fff; background: rgba(255,255,255,.06); }
+  .nav-cta {
+    font-family: var(--head); font-weight: 600; font-size: 15px; letter-spacing: .06em; text-transform: uppercase; white-space: nowrap;
+    background: var(--blue); color: #fff; padding: 10px 17px; transition: background .14s, transform .14s; border-radius: 3px;
+  }
+  .nav-cta:hover { background: var(--blue-bright); transform: translateY(-1px); }
+  .burger { display: none; background: none; border: 0; cursor: pointer; padding: 8px; }
+  .burger span { display: block; width: 26px; height: 3px; background: #fff; margin: 5px 0; }
+
+  /* ---------- HERO ---------- */
+  .hero { position: relative; min-height: 90vh; display: flex; align-items: center; overflow: hidden; background: var(--navy-deep); }
+  .hero-bg { position: absolute; inset: 0; z-index: 0; }
+  .hero-bg img { width: 100%; height: 100%; object-fit: cover; object-position: center 30%; }
+  .hero-bg::after {
+    content: ""; position: absolute; inset: 0;
+    background: linear-gradient(78deg, rgba(6,24,42,.96) 0%, rgba(6,24,42,.82) 38%, rgba(6,24,42,.45) 70%, rgba(6,24,42,.30) 100%);
+  }
+  .hero-inner { position: relative; z-index: 2; width: 100%; }
+  .hero .badgeline { display: inline-flex; align-items: center; gap: 14px; margin-bottom: 24px; }
+  .hero .badgeline img { width: 64px; height: 64px; border-radius: 50%; border: 2px solid rgba(255,255,255,.3); }
+  .hero .badgeline .est { font-family: var(--head); text-transform: uppercase; letter-spacing: .16em; font-size: 13px; color: #9dc0e0; font-weight: 500; line-height: 1.3; }
+  .hero .badgeline .est strong { display: block; color: #fff; font-size: 15px; letter-spacing: .1em; }
+  .hero h1 { font-family: var(--display); font-size: clamp(54px, 10vw, 132px); line-height: .86; color: #fff; margin: 0 0 22px; text-transform: uppercase; }
+  .hero h1 .o { color: var(--blue-bright); -webkit-text-stroke: 0; }
+  .hero p.lead { color: #c4d6e8; font-size: clamp(18px, 2.1vw, 22px); max-width: 52ch; margin: 0 0 34px; }
+  .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; }
+
+  /* ---------- VEDENÍ ---------- */
+  #vedeni { background: var(--white); }
+  .subhead { font-family: var(--head); font-weight: 600; text-transform: uppercase; letter-spacing: .06em; color: var(--navy); font-size: 19px; margin: 40px 0 0; }
+  .subhead:first-of-type { margin-top: 0; }
+  .vlist { list-style: none; margin: 14px 0 0; padding: 0; border-top: 2px solid var(--navy); }
+  .vlist li { display: flex; justify-content: space-between; align-items: baseline; gap: 24px; padding: 16px 2px; border-bottom: 1px solid var(--line); }
+  .vlist li .name { font-family: var(--head); font-weight: 600; font-size: 20px; color: var(--navy); white-space: nowrap; }
+  .vlist li .role { font-size: 14.5px; color: var(--ink-soft); text-transform: uppercase; letter-spacing: .05em; text-align: right; flex: 1 1 auto; }
+  .vlist li.lead .name { color: var(--blue); }
+
+  /* ---------- SPONZOŘI ---------- */
+  #sponzori { background: var(--ice); }
+  .sponsor-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 18px; }
+  .sponsor {
+    min-width: 0; background: #fff; border-top: 4px solid var(--blue); aspect-ratio: 3 / 2; display: grid; place-items: center; padding: 28px;
+    transition: transform .16s, box-shadow .16s; filter: grayscale(.2); box-shadow: 0 1px 0 var(--line);
+  }
+  .sponsor:hover { transform: translateY(-5px); box-shadow: 0 16px 34px rgba(10,33,56,.16); filter: none; }
+  .sponsor img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
+  .sponsor-note { margin: 42px 0 0; color: var(--ink-soft); font-size: 17px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+  .sponsor-note a { color: #fff; }
+
+  /* ---------- HŘIŠTĚ ---------- */
+  #hriste { background: var(--navy); color: #fff; }
+  #hriste .sec-head h2 { color: #fff; }
+  #hriste .sec-head h2 .o { color: var(--blue-bright); }
+  #hriste .sec-head p { color: #9dc0e0; }
+  .crest-wm { position: absolute; right: 2%; top: 60px; width: 320px; opacity: .06; filter: grayscale(1) brightness(2.4); pointer-events: none; }
+  .venue-layout { display: grid; grid-template-columns: 380px 1fr; gap: 24px; position: relative; z-index: 1; }
+  .venue-card { background: var(--navy-card); border-top: 4px solid var(--blue-bright); padding: 36px 34px; display: flex; flex-direction: column; }
+  .venue-card h3 { font-family: var(--display); font-size: 32px; margin: 0 0 24px; text-transform: uppercase; }
+  .vrow { display: flex; gap: 16px; padding: 16px 0; border-top: 1px solid rgba(255,255,255,.12); }
+  .vrow:first-of-type { border-top: 0; padding-top: 0; }
+  .vrow .ic { width: 42px; height: 42px; flex: none; background: rgba(255,255,255,.08); display: grid; place-items: center; }
+  .vrow .ic svg { width: 22px; height: 22px; stroke: var(--blue-bright); fill: none; stroke-width: 2; }
+  .vrow .vl { font-family: var(--head); text-transform: uppercase; letter-spacing: .14em; font-size: 11.5px; color: #7fa6c9; margin-bottom: 2px; }
+  .vrow .vv { font-size: 17px; color: #fff; }
+  .vrow .vv a:hover { color: var(--blue-bright); }
+  .venue-card .dir { margin-top: auto; padding-top: 26px; }
+  .map-frame { overflow: hidden; border-top: 4px solid var(--blue-bright); min-height: 460px; background: #0c2a47; }
+  .map-frame iframe { width: 100%; height: 100%; min-height: 460px; border: 0; display: block; filter: grayscale(.15) saturate(.85) brightness(.95); }
+
+  /* ---------- KONTAKT ---------- */
+  #kontakt { background: var(--white); }
+  .gen-contact { display: grid; grid-template-columns: repeat(3,1fr); gap: 0; border: 1px solid var(--line); margin-bottom: 36px; }
+  .gen-item { padding: 28px 30px; border-right: 1px solid var(--line); position: relative; }
+  .gen-item:last-child { border-right: 0; }
+  .gen-item::before { content: ""; position: absolute; top: 0; left: 0; width: 46px; height: 4px; background: var(--blue); }
+  .gen-item .vl { font-family: var(--head); text-transform: uppercase; letter-spacing: .14em; font-size: 12px; color: var(--ink-soft); margin-bottom: 6px; padding-top: 8px; }
+  .gen-item .vv { font-family: var(--head); font-size: 21px; font-weight: 600; color: var(--navy); word-break: break-word; line-height: 1.15; }
+  .gen-item .vv a:hover { color: var(--blue); }
+
+  .people-title { font-family: var(--head); text-transform: uppercase; letter-spacing: .06em; color: var(--navy); font-size: 22px; margin: 0 0 20px; display: flex; align-items: center; gap: 14px; }
+  .people-title::after { content: ""; flex: 1; height: 2px; background: var(--line); }
+  .people { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .person { background: #fff; border: 1px solid var(--line); border-left: 5px solid var(--blue); padding: 22px 24px; display: flex; align-items: center; gap: 18px; transition: transform .14s, box-shadow .14s; }
+  .person:hover { transform: translateY(-3px); box-shadow: 0 14px 30px rgba(10,33,56,.12); }
+  .person .av { width: 52px; height: 52px; flex: none; background: var(--navy); color: #fff; display: grid; place-items: center; font-family: var(--display); font-size: 20px; }
+  .person .pinfo { min-width: 0; }
+  .person .pn { font-family: var(--head); font-weight: 600; font-size: 19px; color: var(--navy); line-height: 1.1; }
+  .person .pr { font-size: 13px; color: var(--blue); text-transform: uppercase; letter-spacing: .06em; font-weight: 600; margin: 2px 0 6px; }
+  .person .pc { font-size: 14.5px; color: var(--ink-soft); }
+  .person .pc a:hover { color: var(--blue); }
+
+  /* ---------- FOOTER ---------- */
+  footer.site { background: var(--navy-deep); color: #8fb2d4; padding: 60px 0 32px; border-top: 3px solid var(--blue); }
+  .foot-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 30px; flex-wrap: wrap; padding-bottom: 36px; border-bottom: 1px solid rgba(255,255,255,.1); }
+  .foot-brand { display: flex; align-items: center; gap: 16px; }
+  .foot-brand img { width: 60px; height: 60px; border-radius: 50%; }
+  .foot-brand strong { font-family: var(--display); text-transform: uppercase; color: #fff; font-size: 24px; display: block; letter-spacing: .02em; line-height: 1; }
+  .foot-brand span { font-size: 14px; }
+  .foot-social { display: flex; gap: 12px; }
+  .foot-social a { width: 46px; height: 46px; background: rgba(255,255,255,.08); display: grid; place-items: center; transition: background .14s, transform .14s; }
+  .foot-social a:hover { background: var(--blue); transform: translateY(-2px); }
+  .foot-social svg { width: 22px; height: 22px; fill: #fff; }
+  .foot-bottom { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding-top: 24px; font-size: 14px; color: #5e7d9c; }
+
+  /* ---------- MOBILE ---------- */
+  @media (max-width: 1000px) {
+    nav.links, .nav-cta { display: none; }
+    .burger { display: block; }
+    nav.links.open { display: flex; flex-direction: column; position: absolute; top: 74px; left: 0; right: 0; background: var(--navy-deep); padding: 12px 24px; gap: 2px; border-bottom: 3px solid var(--blue); z-index: 60; }
+    nav.links.open a { padding: 14px 12px; font-size: 16px; }
+  }
+  @media (max-width: 980px) {
+    .venue-layout { grid-template-columns: 1fr; }
+    .roster { grid-template-columns: repeat(2, 1fr); }
+    .sponsor-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .lead-feature { grid-template-columns: 1fr; }
+    .lead-feature .photo { min-height: 280px; }
+    .lead-feature .photo::after { background: linear-gradient(180deg, transparent 55%, var(--navy) 100%); }
+    .people { grid-template-columns: 1fr; }
+    .hero-crest { width: 380px; right: -120px; }
+  }
+  @media (max-width: 720px) {
+    body { font-size: 17px; }
+    section { padding: 72px 0; }
+    nav.links, .nav-cta { display: none; }
+    .burger { display: block; }
+    nav.links.open { display: flex; flex-direction: column; position: absolute; top: 74px; left: 0; right: 0; background: var(--navy-deep); padding: 12px 24px; gap: 2px; border-bottom: 3px solid var(--blue); }
+    nav.links.open a { padding: 14px 12px; font-size: 16px; }
+    .gen-contact { grid-template-columns: 1fr; }
+    .gen-item { border-right: 0; border-bottom: 1px solid var(--line); }
+    .gen-item:last-child { border-bottom: 0; }
+    .sponsor-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .hero { min-height: 82vh; }
+    .vlist li { flex-direction: column; gap: 3px; }
+    .vlist li .role { text-align: left; }
+    .crest-wm { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="#top">
+      <img src="assets/logo.jpg" alt="Znak TJ Sokol Chomoutov" />
+      <span class="bt">
+        <strong>Sokol Chomoutov</strong>
+        <span>Olomouc – Chomoutov, z.s.</span>
+      </span>
+    </a>
+    <nav class="links" id="navlinks">
+      <a href="#vedeni">Vedení</a>
+      <a href="#sponzori">Partneři</a>
+      <a href="#hriste">Hřiště</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <a class="nav-cta" href="#kontakt">Kontaktujte nás</a>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero-bg">
+    <img src="https://989465e506.cbaul-cdnwnd.com/c75b673237e14cef3d0c32cf6a6fa108/200000001-305c231564/10650000_10152776998795962_6764601930849683485_n.jpg?ph=989465e506" alt="Tým TJ Sokol Chomoutov" />
+  </div>
+  <div class="hero-inner">
+    <div class="wrap">
+      <div class="badgeline">
+        <img src="assets/logo.jpg" alt="Znak klubu" />
+        <span class="est">Fotbalový klub<strong>Olomouc – Chomoutov</strong></span>
+      </div>
+      <h1>TJ Sokol<br/><span class="o">Chomoutov</span></h1>
+      <p class="lead">Domácí fotbal se srdcem na hřišti. Muži, dorost i mládež pod jedním znakem — přijďte fandit na Horeckou.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#hriste">Najdete nás na hřišti</a>
+        <a class="btn btn-outline" href="#kontakt">Kontakt</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VEDENÍ ============ -->
+<section id="vedeni">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Vedení klubu</span>
+      <h2>Lidé za klubem</h2>
+      <p>7‑členný výkonný výbor volený valnou hromadou se stará o chod TJ Sokol Olomouc – Chomoutov.</p>
+    </div>
+
+    <h3 class="subhead">Výkonný výbor</h3>
+    <ul class="vlist">
+      <li class="lead"><span class="name">Lukáš Resner</span><span class="role">Předseda, sekretář a hl. administrátor</span></li>
+      <li><span class="name">Jakub Hrabálek</span><span class="role">Člen výboru</span></li>
+      <li><span class="name">Mirek Fukan</span><span class="role">Člen výboru</span></li>
+      <li><span class="name">Milan Wittka</span><span class="role">Člen výboru</span></li>
+      <li><span class="name">Jan Přecechtěl</span><span class="role">Člen výboru</span></li>
+      <li><span class="name">Jaroslav Kubíček</span><span class="role">Člen výboru</span></li>
+      <li><span class="name">Marek Rigo st.</span><span class="role">Člen výboru</span></li>
+    </ul>
+
+    <h3 class="subhead">Realizační tým — muži</h3>
+    <ul class="vlist">
+      <li><span class="name">Jakub Hrabálek</span><span class="role">Trenér mužů</span></li>
+      <li><span class="name">Petr Vrba</span><span class="role">Vedoucí mužů</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ SPONZOŘI ============ -->
+<section id="sponzori">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Partneři klubu</span>
+      <h2>Naši <span class="o">sponzoři</span></h2>
+      <p>Velké poděkování patří našim dlouholetým partnerům, kteří nás podporují v rozvoji chomoutovského fotbalu.</p>
+    </div>
+    <div class="sponsor-grid">
+      <div class="sponsor"><img src="https://989465e506.cbaul-cdnwnd.com/c75b673237e14cef3d0c32cf6a6fa108/200000188-f063df156f/logo.jpg?ph=989465e506" alt="Partner klubu" /></div>
+      <div class="sponsor"><img src="https://989465e506.cbaul-cdnwnd.com/c75b673237e14cef3d0c32cf6a6fa108/200000190-83f2184f10/staves-facebook.png?ph=989465e506" alt="STAVES" /></div>
+      <div class="sponsor"><img src="https://989465e506.cbaul-cdnwnd.com/c75b673237e14cef3d0c32cf6a6fa108/200000189-60cf861f75/OLTIS-Gro-1-300x300.jpg?ph=989465e506" alt="OLTIS Group" /></div>
+      <div class="sponsor"><img src="https://989465e506.cbaul-cdnwnd.com/c75b673237e14cef3d0c32cf6a6fa108/200000191-e983bea810/logo_interkov-2-300x186.png?ph=989465e506" alt="INTERKOV" /></div>
+      <div class="sponsor"><img src="https://989465e506.cbaul-cdnwnd.com/c75b673237e14cef3d0c32cf6a6fa108/200000192-32ef733e25/autovrakovi%C5%A1t%C4%9B.jpg?ph=989465e506" alt="Autovrakoviště" /></div>
+    </div>
+    <p class="sponsor-note">Chcete podpořit chomoutovský fotbal? <a class="btn btn-primary" href="#kontakt">Staňte se partnerem</a></p>
+  </div>
+</section>
+
+<!-- ============ HŘIŠTĚ ============ -->
+<section id="hriste">
+  <img class="crest-wm" src="assets/logo.jpg" alt="" />
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker light">Kde hrajeme</span>
+      <h2>Naše <span class="o">hřiště</span></h2>
+      <p>Fotbalové hřiště TJ Sokol Olomouc – Chomoutov najdete na ulici Horecká v městské části Chomoutov.</p>
+    </div>
+    <div class="venue-layout">
+      <div class="venue-card">
+        <h3>Fotbalový areál</h3>
+        <div class="vrow">
+          <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.3-7-11a7 7 0 0114 0c0 4.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+          <div><div class="vl">Adresa</div><div class="vv">Horecká<br/>Olomouc – Chomoutov, 783 35</div></div>
+        </div>
+        <div class="vrow">
+          <div class="ic"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.6A2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 1.9.7 2.8a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.3-1.2a2 2 0 012.1-.5c.9.3 1.8.6 2.8.7a2 2 0 011.8 2z"/></svg></div>
+          <div><div class="vl">Telefon</div><div class="vv"><a href="tel:+420773098048">+420 773 098 048</a></div></div>
+        </div>
+        <div class="vrow">
+          <div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 7l9 6 9-6"/></svg></div>
+          <div><div class="vl">E‑mail</div><div class="vv"><a href="/cdn-cgi/l/email-protection#afccc7c0c2c0dadbc0d981c9c0dbcdcec3efdccad5c1cec281ccd5"><span class="__cf_email__" data-cfemail="88ebe0e7e5e7fdfce7fea6eee7fceae9e4c8fbedf2e6e9e5a6ebf2">[email&#160;protected]</span></a></div></div>
+        </div>
+        <div class="dir">
+          <a class="btn btn-light" href="https://www.google.com/maps/dir/?api=1&destination=Horeck%C3%A1,+Olomouc-Chomoutov" target="_blank" rel="noopener">Navigovat na hřiště →</a>
+        </div>
+      </div>
+      <div class="map-frame">
+        <iframe title="Mapa – hřiště Chomoutov" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Horeck%C3%A1,+Olomouc-Chomoutov,+783+35&z=15&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ KONTAKT ============ -->
+<section id="kontakt">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Kontakt</span>
+      <h2>Spojte se <span class="o">s námi</span></h2>
+      <p>Vážení fanoušci, pro případné další informace, otázky nebo odpovědi nás neváhejte kontaktovat.</p>
+    </div>
+
+    <div class="gen-contact">
+      <div class="gen-item">
+        <div class="vl">E‑mail klubu</div>
+        <div class="vv"><a href="/cdn-cgi/l/email-protection#e5868d8a888a90918a93cb838a91878489a596809f8b8488cb869f"><span class="__cf_email__" data-cfemail="c9aaa1a6a4a6bcbda6bfe7afa6bdaba8a589baacb3a7a8a4e7aab3">[email&#160;protected]</span></a></div>
+      </div>
+      <div class="gen-item">
+        <div class="vl">Telefon</div>
+        <div class="vv"><a href="tel:+420773098048">+420 773 098 048</a></div>
+      </div>
+      <div class="gen-item">
+        <div class="vl">Adresa</div>
+        <div class="vv">Horecká, Olomouc – Chomoutov</div>
+      </div>
+    </div>
+
+    <h4 class="people-title">Kontaktní osoby</h4>
+    <div class="people">
+      <div class="person">
+        <div class="av">LR</div>
+        <div class="pinfo">
+          <div class="pn">Lukáš Resner</div>
+          <div class="pr">Předseda, sekretář a hl. administrátor</div>
+          <div class="pc"><a href="/cdn-cgi/l/email-protection#e69483958883948a938d8795a695839c88878bc8859c"><span class="__cf_email__" data-cfemail="156770667b706779607e74665566706f7b74783b766f">[email&#160;protected]</span></a> · <a href="tel:+420773098048">773 098 048</a></div>
+        </div>
+      </div>
+      <div class="person">
+        <div class="av">MW</div>
+        <div class="pinfo">
+          <div class="pn">Milan Wittka</div>
+          <div class="pr">Asistent trenéra dorostu</div>
+          <div class="pc"><a href="/cdn-cgi/l/email-protection#9ef3f7f2fff0e9f7eaffeddeedfbe4f0fff3b0fde4"><span class="__cf_email__" data-cfemail="b6dbdfdad7d8c1dfc2d7c5f6c5d3ccd8d7db98d5cc">[email&#160;protected]</span></a> · <a href="tel:+420604670213">604 670 213</a></div>
+        </div>
+      </div>
+      <div class="person">
+        <div class="av">MR</div>
+        <div class="pinfo">
+          <div class="pn">Marek Rigo st.</div>
+          <div class="pr">Asistent trenéra mužů</div>
+          <div class="pc"><a href="/cdn-cgi/l/email-protection#483a212f2725293a2d23083b2d32262925662b32"><span class="__cf_email__" data-cfemail="9deff4faf2f0fceff8f6ddeef8e7f3fcf0b3fee7">[email&#160;protected]</span></a> · <a href="tel:+420605820632">605 820 632</a></div>
+        </div>
+      </div>
+      <div class="person">
+        <div class="av">JK</div>
+        <div class="pinfo">
+          <div class="pn">Jaroslav Kubíček</div>
+          <div class="pr">Vedoucí mužů</div>
+          <div class="pc"><a href="/cdn-cgi/l/email-protection#2842495a4c49435d4a414b4d431e1a685b4d52464945064b52"><span class="__cf_email__" data-cfemail="412b203325202a34232822242a77730132243b2f202c6f223b">[email&#160;protected]</span></a> · <a href="tel:+420732270743">732 270 743</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <img src="assets/logo.jpg" alt="Znak TJ Sokol Chomoutov" />
+        <div>
+          <strong>TJ Sokol Chomoutov</strong>
+          <span>TJ Sokol Olomouc – Chomoutov, z.s.</span>
+        </div>
+      </div>
+      <div class="foot-social">
+        <a href="https://www.facebook.com/TJSCHfotbal/" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 10-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0022 12z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/tj_sokol_chomoutov/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c.1-1.2.3-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4 1.3-.1 1.7-.1 4.9-.1zm0 3.5a6.3 6.3 0 100 12.6 6.3 6.3 0 000-12.6zm0 10.4a4.1 4.1 0 110-8.2 4.1 4.1 0 010 8.2zm6.5-10.6a1.5 1.5 0 11-2.9 0 1.5 1.5 0 012.9 0z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 TJ Sokol Olomouc – Chomoutov, z.s.</span>
+      <span>Horecká, Olomouc – Chomoutov, 783 35</span>
+    </div>
+  </div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  var burger = document.getElementById('burger');
+  var navlinks = document.getElementById('navlinks');
+  burger.addEventListener('click', function () { navlinks.classList.toggle('open'); });
+  navlinks.addEventListener('click', function (e) { if (e.target.tagName === 'A') navlinks.classList.remove('open'); });
+</script>
+</body>
+</html>
