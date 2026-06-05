@@ -42,10 +42,6 @@ export const sponsors = [
     alt: "OLTIS Group",
   },
   {
-    src: "/sponsors/sponsor-4.png",
-    alt: "INTERKOV",
-  },
-  {
     src: "/sponsors/sponsor-5.jpg",
     alt: "Autovrakoviště",
   },
@@ -68,6 +64,18 @@ export const sponsors = [
   {
     src: "/sponsors/sponsor-10.png",
     alt: "Laserový popis",
+  },
+  {
+    src: "/sponsors/sponsor-11.png",
+    alt: "Kola Pirkl",
+  },
+  {
+    src: "/sponsors/sponsor-12.png",
+    alt: "Protlaky GAMA",
+  },
+  {
+    src: "/sponsors/sponsor-13.jpg",
+    alt: "Můjobchod",
   },
 ];
 
@@ -101,8 +109,8 @@ export const contactPeople = [
     initials: "JH",
     name: "Jakub Hrabálek",
     role: "Trenér mužů",
-    // email: coachEmail,
-    // phone: "604 670 213",
-    // phoneHref: "tel:+420604670213",
+    email: "jakub.hrabalek@gmail.com",
+    phone: "732 249 202",
+    phoneHref: "tel:+420732249202",
   },
 ];
