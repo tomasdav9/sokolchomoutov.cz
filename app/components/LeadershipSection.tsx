@@ -27,7 +27,7 @@ export function LeadershipSection() {
         <SectionHeader
           kicker="Vedení klubu"
           title="Lidé za klubem"
-          description="7-clenný výkonný výbor volený valnou hromadou se stará o chod TJ Sokol Olomouc - Chomoutov."
+          description="7-členný výkonný výbor volený valnou hromadou se stará o chod TJ Sokol Olomouc - Chomoutov."
         />
 
         <h3 className="subhead">Výkonný výbor</h3>
