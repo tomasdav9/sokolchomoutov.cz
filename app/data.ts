@@ -29,10 +29,10 @@ export const menStaff = [
 ];
 
 export const sponsors = [
-  {
-    src: "/sponsors/sponsor-1.jpg",
-    alt: "Partner klubu",
-  },
+  // {
+  //   src: "/sponsors/sponsor-1.jpg",
+  //   alt: "Partner klubu",
+  // },
   {
     src: "/sponsors/sponsor-2.png",
     alt: "STAVES",
