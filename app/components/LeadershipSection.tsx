@@ -1,4 +1,4 @@
-import { boardMembers, menStaff } from "../data";
+import { boardMembers, menStaff, youthStaff } from "../data";
 import { SectionHeader } from "./SectionHeader";
 
 type LeadershipMember = {
@@ -35,6 +35,9 @@ export function LeadershipSection() {
 
         <h3 className="subhead">Realizační tým - muži</h3>
         <MemberList members={menStaff} />
+
+        <h3 className="subhead">Realizační tým - mládež</h3>
+        <MemberList members={youthStaff} />
       </div>
     </section>
   );

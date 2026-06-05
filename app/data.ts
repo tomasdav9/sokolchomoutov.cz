@@ -28,6 +28,12 @@ export const menStaff = [
   { name: "Petr Vrba", role: "Vedoucí mužů" },
 ];
 
+export const youthStaff = [
+  { name: "Marek Rigo st.", role: "Trenér mládeže" },
+  { name: "Václav Čech", role: "Trenér mládeže" },
+  { name: "Jiří Kratochvil", role: "Trenér mládeže" },
+];
+
 export const sponsors = [
   // {
   //   src: "/sponsors/sponsor-1.jpg",
