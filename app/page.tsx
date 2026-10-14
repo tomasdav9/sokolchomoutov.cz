@@ -3,6 +3,7 @@ import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { HeroSection } from "./components/HeroSection";
 import { LeadershipSection } from "./components/LeadershipSection";
+import { MatchesSection } from "./components/MatchesSection";
 import { SponsorsSection } from "./components/SponsorsSection";
 import { VenueSection } from "./components/VenueSection";
 
@@ -13,6 +14,7 @@ export default function Home() {
     <>
       <Header />
       <HeroSection />
+      <MatchesSection />
       <LeadershipSection />
       <SponsorsSection />
       <VenueSection />

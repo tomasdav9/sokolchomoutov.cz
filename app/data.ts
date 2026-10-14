@@ -3,6 +3,7 @@ export const chairmanEmail = "resnerlukas@seznam.cz";
 export const coachEmail = "milanwitas@seznam.cz";
 
 export const navLinks = [
+  { href: "#zapasy", label: "Zápasy" },
   { href: "#vedeni", label: "Vedení" },
   { href: "#sponzori", label: "Partneři" },
   { href: "#hriste", label: "Hřiště" },

@@ -1,5 +1,3 @@
-import { HeroMatches } from "./HeroMatches";
-
 export function HeroSection() {
   return (
     <section className="hero" id="top">
@@ -9,21 +7,13 @@ export function HeroSection() {
           alt="Tým TJ Sokol Chomoutov"
         />
       </div>
-      <div className="hero-inner">
-        <div className="wrap">
-          <div className="badgeline">
-            <img src="/assets/logo.jpg" alt="Znak klubu" />
-            <span className="est">
-              Fotbalový klub<strong>Olomouc - Chomoutov</strong>
-            </span>
-          </div>
-          <h1>
-            TJ Sokol
-            <br />
-            <span className="o">Chomoutov</span>
-          </h1>
-          <HeroMatches />
-        </div>
+      <div className="hero-inner wrap">
+        <img className="hero-logo" src="/assets/logo.jpg" alt="Znak klubu" width={120} height={120} />
+        <h1>
+          <span className="hero-pre">TJ Sokol</span>
+          Chomoutov
+        </h1>
+        <p className="hero-sub">Fotbalový klub Olomouc - Chomoutov</p>
       </div>
     </section>
   );
