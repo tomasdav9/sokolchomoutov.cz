@@ -6,6 +6,8 @@ import { LeadershipSection } from "./components/LeadershipSection";
 import { SponsorsSection } from "./components/SponsorsSection";
 import { VenueSection } from "./components/VenueSection";
 
+export const revalidate = 3600;
+
 export default function Home() {
   return (
     <>

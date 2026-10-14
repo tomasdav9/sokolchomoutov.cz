@@ -32,9 +32,6 @@ export function Header() {
             </a>
           ))}
         </nav>
-        <a className="nav-cta" href="#kontakt">
-          Kontaktujte nás
-        </a>
         <button
           className="burger"
           id="burger"

@@ -1,0 +1,234 @@
+{
+  "source": "https://www.fotbal.cz/souteze/turnaje/zapas/cdd9a59f-d3fd-46ed-9d2f-9103a2c63030?programFilter-team-id=51bc28b5-8335-4223-b5ce-0b4658938a4e",
+  "competition": "Olomoucký kraj › 2026 A3B - 7. liga sk.B",
+  "club": "67c5d76e-9127-4c3f-80b4-29670db701b8",
+  "clubs": {
+    "67c5d76e-9127-4c3f-80b4-29670db701b8": {
+      "name": "Olomouc-Chomoutov",
+      "logo": "/clubs/67c5d76e-9127-4c3f-80b4-29670db701b8.jpg"
+    },
+    "a0a5aec2-c038-49d4-ac78-ae128b337ce5": {
+      "name": "SOKOL Újezd",
+      "logo": "/clubs/a0a5aec2-c038-49d4-ac78-ae128b337ce5.jpg"
+    },
+    "d74c05cb-dc92-4890-8941-44bf59c8b988": {
+      "name": "SK Slatinice",
+      "logo": "/clubs/d74c05cb-dc92-4890-8941-44bf59c8b988.jpg"
+    },
+    "544f75df-15d1-4d1a-9d87-68f74b804845": {
+      "name": "FK Horka nad Moravou",
+      "logo": "/clubs/544f75df-15d1-4d1a-9d87-68f74b804845.jpg"
+    },
+    "7e4c6fe6-30e3-48de-afc7-a9ef0d3c2fbd": {
+      "name": "SK Chválkovice",
+      "logo": "/clubs/7e4c6fe6-30e3-48de-afc7-a9ef0d3c2fbd.jpg"
+    },
+    "67ca7837-b495-415f-8be7-7ac4769c7dfe": {
+      "name": "TJ Sigma Lutín",
+      "logo": "/clubs/67ca7837-b495-415f-8be7-7ac4769c7dfe.jpg"
+    },
+    "55e45b38-1d5f-4128-891c-efff7933d299": {
+      "name": "Sokol Kladky",
+      "logo": "/clubs/55e45b38-1d5f-4128-891c-efff7933d299.jpg"
+    },
+    "48eb0fd3-cd5c-497a-b3dc-d4c2f4eeffd4": {
+      "name": "Sokol Doloplazy",
+      "logo": "/clubs/48eb0fd3-cd5c-497a-b3dc-d4c2f4eeffd4.jpg"
+    },
+    "cb9755f1-7071-469d-ac78-397a7c809952": {
+      "name": "Slovan Černovír",
+      "logo": "/clubs/cb9755f1-7071-469d-ac78-397a7c809952.jpg"
+    },
+    "9f59a9ae-0b4a-47ae-b409-696a46802a0f": {
+      "name": "FK Přáslavice",
+      "logo": "/clubs/9f59a9ae-0b4a-47ae-b409-696a46802a0f.jpg"
+    },
+    "429bacda-5b0b-4988-b380-48ab645006fb": {
+      "name": "Sokol Pňovice",
+      "logo": "/clubs/429bacda-5b0b-4988-b380-48ab645006fb.jpg"
+    },
+    "fbcb5b48-dbc5-4db3-ad79-45fac2168f3d": {
+      "name": "Jiskra Brodek u Konice",
+      "logo": "/clubs/fbcb5b48-dbc5-4db3-ad79-45fac2168f3d.jpg"
+    },
+    "61bb0c27-4d7b-4de0-827b-34178bf72120": {
+      "name": "Sokol Dub nad Moravou",
+      "logo": "/clubs/61bb0c27-4d7b-4de0-827b-34178bf72120.jpg"
+    },
+    "54c8fe6f-24e0-4131-a7c2-032277136180": {
+      "name": "Bělkovice-Lašťany",
+      "logo": "/clubs/54c8fe6f-24e0-4131-a7c2-032277136180.jpg"
+    }
+  },
+  "matches": [
+    {
+      "round": 3,
+      "matchNumber": "2026710A3B0302",
+      "date": "2026-08-15",
+      "time": "16:30",
+      "home": "67c5d76e-9127-4c3f-80b4-29670db701b8",
+      "away": "a0a5aec2-c038-49d4-ac78-ae128b337ce5",
+      "homeScore": 3,
+      "awayScore": 0,
+      "venue": "Chomoutov, ul.Horecká",
+      "spectators": null,
+      "url": "https://www.fotbal.cz/souteze/zapasy/zapas/07d4679a-3ede-42ed-96fb-b42b0915f997"
+    },
+    {
+      "round": 4,
+      "matchNumber": "2026710A3B0407",
+      "date": "2026-08-22",
+      "time": "16:30",
+      "home": "d74c05cb-dc92-4890-8941-44bf59c8b988",
+      "away": "67c5d76e-9127-4c3f-80b4-29670db701b8",
+      "homeScore": 2,
+      "awayScore": 0,
+      "venue": "Slatinice, tráva",
+      "spectators": 200,
+      "url": "https://www.fotbal.cz/souteze/zapasy/zapas/7ee5e863-3f44-4ab8-a12d-3748aa9b7047"
+    },
+    {
+      "round": 5,
+      "matchNumber": "2026710A3B0501",
+      "date": "2026-08-29",
+      "time": "16:00",
+      "home": "67c5d76e-9127-4c3f-80b4-29670db701b8",
+      "away": "544f75df-15d1-4d1a-9d87-68f74b804845",
+      "homeScore": 5,
+      "awayScore": 1,
+      "venue": "Chomoutov, ul.Horecká",
+      "spectators": 600,
+      "url": "https://www.fotbal.cz/souteze/zapasy/zapas/c7dea394-eaad-4526-88bf-feed8334e3b3"
+    },
+    {
+      "round": 6,
+      "matchNumber": "2026710A3B0607",
+      "date": "2026-09-05",
+      "time": "16:00",
+      "home": "67c5d76e-9127-4c3f-80b4-29670db701b8",
+      "away": "7e4c6fe6-30e3-48de-afc7-a9ef0d3c2fbd",
+      "homeScore": 4,
+      "awayScore": 0,
+      "venue": "Chomoutov, ul.Horecká",
+      "spectators": 150,
+      "url": "https://www.fotbal.cz/souteze/zapasy/zapas/22496f57-4739-4859-862b-ed455a9726da"
+    },
+    {
+      "round": 7,
+      "matchNumber": "2026710A3B0702",
+      "date": "2026-09-13",
+      "time": "16:00",
+      "home": "67ca7837-b495-415f-8be7-7ac4769c7dfe",
+      "away": "67c5d76e-9127-4c3f-80b4-29670db701b8",
+      "homeScore": 1,
+      "awayScore": 6,
+      "venue": "Lutín",
+      "spectators": 155,
+      "url": "https://www.fotbal.cz/souteze/zapasy/zapas/1580cc90-44cb-49d8-8354-def2094b96c3"
+    },
+    {
+      "round": 8,
+      "matchNumber": "2026710A3B0806",
+      "date": "2026-09-19",
+      "time": "15:30",
+      "home": "67c5d76e-9127-4c3f-80b4-29670db701b8",
+      "away": "55e45b38-1d5f-4128-891c-efff7933d299",
+      "homeScore": 3,
+      "awayScore": 1,
+      "venue": "Chomoutov, ul.Horecká",
+      "spectators": 124,
+      "url": "https://www.fotbal.cz/souteze/zapasy/zapas/61664025-baa9-425a-b257-7ca1d87e7a69"
+    },
+    {
+      "round": 9,
+      "matchNumber": "2026710A3B0903",
+      "date": "2026-09-26",
+      "time": "15:30",
+      "home": "48eb0fd3-cd5c-497a-b3dc-d4c2f4eeffd4",
+      "away": "67c5d76e-9127-4c3f-80b4-29670db701b8",
+      "homeScore": 1,
+      "awayScore": 6,
+      "venue": "Doloplazy, tráva",
+      "spectators": 80,
+      "url": "https://www.fotbal.cz/souteze/zapasy/zapas/15fc48f8-000c-4eb7-a1c5-5c0f53d1c1e0"
+    },
+    {
+      "round": 10,
+      "matchNumber": "2026710A3B1005",
+      "date": "2026-10-03",
+      "time": "15:00",
+      "home": "67c5d76e-9127-4c3f-80b4-29670db701b8",
+      "away": "cb9755f1-7071-469d-ac78-397a7c809952",
+      "homeScore": 0,
+      "awayScore": 0,
+      "venue": "Chomoutov, ul.Horecká",
+      "spectators": 285,
+      "url": "https://www.fotbal.cz/souteze/zapasy/zapas/cf6d6534-e447-4587-a9dc-d49e79786b6f"
+    },
+    {
+      "round": 11,
+      "matchNumber": "2026710A3B1104",
+      "date": "2026-10-10",
+      "time": "15:00",
+      "home": "9f59a9ae-0b4a-47ae-b409-696a46802a0f",
+      "away": "67c5d76e-9127-4c3f-80b4-29670db701b8",
+      "homeScore": 1,
+      "awayScore": 5,
+      "venue": "Přáslavice",
+      "spectators": 153,
+      "url": "https://www.fotbal.cz/souteze/zapasy/zapas/915d6902-eb82-4ebf-8c16-0660fa8efe63"
+    },
+    {
+      "round": 12,
+      "matchNumber": "2026710A3B1204",
+      "date": "2026-10-17",
+      "time": "14:30",
+      "home": "67c5d76e-9127-4c3f-80b4-29670db701b8",
+      "away": "429bacda-5b0b-4988-b380-48ab645006fb",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Chomoutov, ul.Horecká",
+      "spectators": null,
+      "url": "https://www.fotbal.cz/souteze/zapasy/zapas/aca7c276-aa1a-4834-b1ac-210ac99a95d5"
+    },
+    {
+      "round": 13,
+      "matchNumber": "2026710A3B1305",
+      "date": "2026-10-25",
+      "time": "14:30",
+      "home": "fbcb5b48-dbc5-4db3-ad79-45fac2168f3d",
+      "away": "67c5d76e-9127-4c3f-80b4-29670db701b8",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Brodek u K., tráva",
+      "spectators": null,
+      "url": "https://www.fotbal.cz/souteze/zapasy/zapas/19c91594-d2b9-45bc-8e3b-eba081eb9e22"
+    },
+    {
+      "round": 2,
+      "matchNumber": "2026710A3B0206",
+      "date": "2026-11-01",
+      "time": "14:00",
+      "home": "61bb0c27-4d7b-4de0-827b-34178bf72120",
+      "away": "67c5d76e-9127-4c3f-80b4-29670db701b8",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Dub n.M., tráva",
+      "spectators": null,
+      "url": "https://www.fotbal.cz/souteze/zapasy/zapas/38be7a6a-1588-471d-b3d3-9e800d1b22cd"
+    },
+    {
+      "round": 1,
+      "matchNumber": "2026710A3B0103",
+      "date": "2026-11-07",
+      "time": "14:00",
+      "home": "67c5d76e-9127-4c3f-80b4-29670db701b8",
+      "away": "54c8fe6f-24e0-4131-a7c2-032277136180",
+      "homeScore": null,
+      "awayScore": null,
+      "venue": "Chomoutov, ul.Horecká",
+      "spectators": null,
+      "url": "https://www.fotbal.cz/souteze/zapasy/zapas/3f4c1678-5d42-4500-9abb-7fe0efc62d8a"
+    }
+  ]
+}

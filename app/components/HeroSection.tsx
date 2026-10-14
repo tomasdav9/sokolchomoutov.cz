@@ -1,3 +1,5 @@
+import { HeroMatches } from "./HeroMatches";
+
 export function HeroSection() {
   return (
     <section className="hero" id="top">
@@ -20,18 +22,7 @@ export function HeroSection() {
             <br />
             <span className="o">Chomoutov</span>
           </h1>
-          <p className="lead">
-            Domácí fotbal se srdcem na hřišti. Muži i mládež pod jedním znakem -
-            přijďte fandit na Horeckou.
-          </p>
-          <div className="hero-actions">
-            <a className="btn btn-primary" href="#hriste">
-              Najdete nás na hřišti
-            </a>
-            <a className="btn btn-outline" href="#kontakt">
-              Kontakt
-            </a>
-          </div>
+          <HeroMatches />
         </div>
       </div>
     </section>

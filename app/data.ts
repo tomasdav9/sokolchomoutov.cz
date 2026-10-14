@@ -25,7 +25,7 @@ export const boardMembers = [
 
 export const menStaff = [
   { name: "Jakub Hrabálek", role: "Trenér mužů" },
-  { name: "Petr Vrba", role: "Vedoucí mužů" },
+  { name: "Václav Čech", role: "Asistent trenéra" },
 ];
 
 export const youthStaff = [
