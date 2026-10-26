@@ -185,8 +185,8 @@
       "time": "14:30",
       "home": "67c5d76e-9127-4c3f-80b4-29670db701b8",
       "away": "429bacda-5b0b-4988-b380-48ab645006fb",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 8,
+      "awayScore": 0,
       "venue": "Chomoutov, ul. Horecká",
       "spectators": null,
       "url": "https://www.fotbal.cz/souteze/zapasy/zapas/aca7c276-aa1a-4834-b1ac-210ac99a95d5"
@@ -198,8 +198,8 @@
       "time": "14:30",
       "home": "fbcb5b48-dbc5-4db3-ad79-45fac2168f3d",
       "away": "67c5d76e-9127-4c3f-80b4-29670db701b8",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 3,
       "venue": "Brodek u K., tráva",
       "spectators": null,
       "url": "https://www.fotbal.cz/souteze/zapasy/zapas/19c91594-d2b9-45bc-8e3b-eba081eb9e22"

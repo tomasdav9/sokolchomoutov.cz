@@ -1,0 +1,31 @@
+name: Update match results
+
+on:
+  schedule:
+    # Sunday 20:00 CET / 21:00 CEST, after the weekend matches
+    - cron: "0 19 * * 0"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - run: node scripts/update-results.mjs
+
+      - name: Commit and push new results
+        run: |
+          git diff --quiet app/matches.json && exit 0
+          # Vercel Hobby only deploys commits authored by the account owner
+          git config user.name "Tomas David"
+          git config user.email "tomasdav9@gmail.com"
+          git commit -am "Chore: update match results"
+          git push
