@@ -50,11 +50,9 @@ if (rows.size === 0) {
 let updated = 0;
 for (const match of pending) {
   const weAreHome = match.home === data.club;
+  // Kick-off times get moved, so match on the day only and take the time from the source
   const row = [...rows.values()].find(
-    (r) =>
-      r.day === match.date.slice(5) &&
-      (!match.time || r.time === match.time) &&
-      /chomoutov/i.test(weAreHome ? r.home : r.away),
+    (r) => r.day === match.date.slice(5) && /chomoutov/i.test(weAreHome ? r.home : r.away),
   );
   const name = `${data.clubs[match.home].name} - ${data.clubs[match.away].name} (${match.date})`;
 
@@ -63,6 +61,7 @@ for (const match of pending) {
     continue;
   }
 
+  match.time = row.time;
   match.homeScore = row.homeScore;
   match.awayScore = row.awayScore;
   updated++;
